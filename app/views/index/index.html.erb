@@ -1,12 +1,12 @@
 <p>BIENVENUE <%= @params %> ! Voici la liste des potins : </p>
 
 <div class = gossips>
-  <% @gossips.each.with_index do |gossip,ind| %>
+  <% @gossips.each.with_index do |gossip, ind| %>
     <p>
-      <a href="/gossip/<%= ind + 1%>">ici <%= ind %></a>
-        Potin No. <%= ind %><br/>
-        Author: <%= gossip.author %><br/>
-        Content: <%= gossip.content %>
+
+      <!-- <a href="/gossip/<%= ind + 1%>">ici <%= ind %></a> -->
+        Auteur : <%= gossip.author %><br/>
+        Contenu : <%= gossip.content %>
     </p>
   <% end %>
 </div>
