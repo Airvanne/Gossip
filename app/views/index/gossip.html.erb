@@ -1,0 +1,15 @@
+<h1>Voici le Gossip demandé</h1>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">écris par <%= Gossip.find(@params).author %></h5>
+      <h6 class="card-subtitle mb-2 text-muted">Créé le <%= Gossip.find(@params).created_at %></h6>
+      <p class="card-text">
+
+        <%= Gossip.find(@params).content %>
+
+      </p>
+      <%= link_to "Accueil" index_path %>
+
+    </div>
+  </div>
